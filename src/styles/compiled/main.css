@@ -42,6 +42,7 @@ body nav .pseudoLine {
 body .hero-sect {
   width: 100vw;
   display: flex;
+  border: 3px solid green;
 }
 body .hero-sect .hero-img {
   background-image: url("../../../assets/zac-sturgeon-sDzof1Ps89s-unsplash.jpg");
@@ -93,21 +94,23 @@ body .hero-sect .hero-text .hero-social img {
   margin-right: 0.3rem;
   margin-top: 0.5rem;
 }
-body .mission-sect {
+body .mission {
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  border: 3px solid cornflowerblue;
 }
-body .mission-sect p {
+body .mission p {
   width: 400px;
   font-family: "Josefin Sans", sans-serif;
   color: #815349;
   font-size: 1rem;
   border: 2px solid #815349;
 }
-body .mission-sect img {
+body .mission img {
   width: 300px;
+  height: auto;
 }
 body .job-details {
   display: none;
@@ -123,8 +126,10 @@ body .work-sect {
   font-family: "Josefin Sans", sans-serif;
   font-size: 2.5rem;
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   font-weight: bold;
+  justify-content: center;
+  border: 3px solid red;
 }
 body .work-sect .old-jobs {
   display: flex;
@@ -133,6 +138,10 @@ body .work-sect .old-jobs {
 }
 body .work-sect .old-jobs .apple {
   border: none;
+}
+body .work-sect .row1,
+body .work-sect .row2 {
+  border: 8px solid orange;
 }
 body .work-sect .row1 li:first-of-type {
   margin-right: 3rem;

@@ -19,6 +19,7 @@ $main-font: "Josefin Sans", sans-serif;
 body {
   background-color: #f0f4f2;
 
+  // NAV SECTION
   nav {
     position: fixed;
     height: 4rem;
@@ -60,10 +61,12 @@ body {
     }
   }
 
+  // HERO SECTION
   .hero-sect {
     // text-align: center;
     width: 100vw;
     display: flex;
+    border: 3px solid green;
 
     .hero-img {
       background-image: url("../../../assets/zac-sturgeon-sDzof1Ps89s-unsplash.jpg");
@@ -146,13 +149,13 @@ body {
     }
   }
 
-  .mission-sect {
+  // MISSION SECTION
+  .mission {
     height: 100vh;
-
     display: flex;
     justify-content: center;
-
     align-items: center;
+    border: 3px solid cornflowerblue;
 
     p {
       width: 400px;
@@ -164,9 +167,11 @@ body {
 
     img {
       width: 300px;
-      // height: auto;
+      height: auto;
     }
   }
+
+  // END OF MISSION SECTION
 
   .job-details {
     display: none;
@@ -179,13 +184,18 @@ body {
     }
   }
 
+  // WORK SECTION
   .work-sect {
     height: 100vh;
     font-family: $main-font;
     font-size: 2.5rem;
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    // flex-direction: column;
     font-weight: bold;
+    justify-content: center;
+    // justify-content: space-evenly;
+    border: 3px solid red;
 
     .old-jobs {
       display: flex;
@@ -198,6 +208,12 @@ body {
       }
     }
 
+    .row1,
+    .row2 {
+      border: 8px solid orange;
+    }
+
+    // OLD JOBS ROW 1
     .row1 li:first-of-type {
       margin-right: 3rem;
     }
