@@ -3,10 +3,226 @@
 // to customize it as you may want.
 
 @import "variables";
-@import "../../node_modules/bootstrap/scss/bootstrap";
+// @import "../../node_modules/bootstrap/scss/bootstrap";
 
 // Write your sass code here or import partials
 
-h1 {
-  color: orangered;
+$primary-color: #815349;
+$main-font: "Josefin Sans", sans-serif;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f0f4f2;
+
+  nav {
+    position: fixed;
+    height: 4rem;
+    background-color: rgb(240, 244, 242, 0.2);
+    width: 100%;
+    z-index: 5;
+
+    padding-top: 0.2rem;
+
+    ul {
+      display: flex;
+      justify-content: end;
+      align-items: center;
+      li {
+        display: inline-block;
+        font-family: $main-font;
+
+        font-size: 1.5rem;
+        font-weight: 100;
+
+        color: $primary-color;
+        padding: 1rem;
+        margin: 0 0.5rem;
+      }
+
+      li:hover {
+        // border: 1.5px solid #815349;
+        text-shadow: 5px -1px 3px rgb(131, 84, 73, 0.5);
+        // background-color: rgb(240, 244, 242, 0.9);
+      }
+    }
+
+    .pseudoLine {
+      height: 0.3rem;
+      width: 0px;
+      background-color: $primary-color;
+      position: absolute;
+      top: 100%;
+    }
+  }
+
+  .hero-sect {
+    // text-align: center;
+    width: 100vw;
+    display: flex;
+
+    .hero-img {
+      background-image: url("../../../assets/zac-sturgeon-sDzof1Ps89s-unsplash.jpg");
+      width: 70%;
+      height: 100vh;
+      background-size: cover;
+      background-repeat: no-repeat;
+      // border: 2px solid red;
+      background-position: center center;
+      border-bottom-right-radius: 15px;
+      border-top-right-radius: 15px;
+
+      // box-shadow: inset 0px 0px 200px 100px #eff3f4;
+
+      // box-shadow: inset 12px 12px 200px 100px rgba(0, 0, 255, 0.2);
+
+      // background-color: #f0f4f2;
+      // box-shadow: 0 0 5px 10px #f0f4f2;
+
+      // border: solid #ffffff 19px;
+      // box-shadow: 0 5px 49px rgba(255, 255, 255, 0.5);
+      // -webkit-box-shadow: 0 5px 49px rgba(255, 255, 255, 0.5);
+      // -moz-box-shadow: 0 5px 49px rgba(255, 255, 255, 0.5);
+    }
+
+    .blur-bar {
+      height: 108vh;
+      width: 8rem;
+      background-color: #f0f4f2;
+      position: relative;
+      left: -3rem;
+      filter: blur(20px);
+    }
+
+    .blur-base {
+      width: 20%;
+      height: 20rem;
+      border: 2px solid #815349;
+    }
+
+    .hero-text {
+      font-family: $main-font;
+      justify-content: end;
+      // border: 2px solid #815349;
+      // height: 20rem;
+      width: 48rem;
+      align-self: flex-end;
+      margin-right: 1.5rem;
+      margin-bottom: 5rem;
+      text-align: right;
+      line-height: 2.5rem;
+      letter-spacing: 0.3rem;
+
+      p:first-of-type {
+        color: $primary-color;
+        font-size: 2.5rem;
+
+        text-transform: uppercase;
+      }
+
+      p:nth-of-type(2),
+      p:nth-of-type(3) {
+        color: $primary-color;
+        font-size: 1.5rem;
+      }
+
+      // p:nth-of-type(3) {
+      //   color: $primary-color;
+      //   font-size: 2rem;
+      // }
+
+      .hero-social {
+        img {
+          width: 1.5rem;
+          height: 1.5rem;
+          margin-right: 0.3rem;
+          margin-top: 0.5rem;
+        }
+      }
+    }
+  }
+
+  .mission-sect {
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+
+    align-items: center;
+
+    p {
+      width: 400px;
+      font-family: $main-font;
+      color: $primary-color;
+      font-size: 1rem;
+      border: 2px solid #815349;
+    }
+
+    img {
+      width: 300px;
+      // height: auto;
+    }
+  }
+
+  .job-details {
+    display: none;
+
+    li {
+      font-size: 2rem;
+      font-weight: 400;
+      color: $primary-color;
+      margin-left: 2rem;
+    }
+  }
+
+  .work-sect {
+    height: 100vh;
+    font-family: $main-font;
+    font-size: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+
+    .old-jobs {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      // flex-wrap: wrap;
+
+      .apple {
+        border: none;
+      }
+    }
+
+    .row1 li:first-of-type {
+      margin-right: 3rem;
+    }
+    .row1 li:last-of-type {
+      margin-left: 3rem;
+    }
+
+    .old-jobs > li {
+      border: 0.3rem solid #815349;
+      width: 23rem;
+      padding: 2rem;
+      color: #815349;
+      margin: 2rem;
+      list-style: none;
+      text-align: center;
+    }
+
+    .mas {
+      position: relative;
+      bottom: 45rem;
+      left: 65rem;
+
+      li {
+        margin: 10px 0 10px;
+      }
+    }
+  }
 }
