@@ -1,4 +1,4 @@
-const mas = document.querySelector(".row1 li:nth-of-type(2)")
+const mas = document.querySelector(".row-work li:nth-of-type(2)")
 console.log('here');
 
 console.log(mas);
@@ -31,18 +31,21 @@ window.addEventListener('scroll', (e)=>{
 
   const scrTop = document.scrollingElement.scrollTop
   const scrHeight = document.scrollingElement.scrollHeight
+  const clientHeight = document.scrollingElement.clientHeight
+
+  console.log("client", clientHeight, "scrollHeight", scrHeight)
 
   // const pagePercent= ((scrTop+window.innerHeight)/scrHeight);
-  const pagePercent= (scrTop/scrHeight);
+  const pagePercent= (scrTop/(scrHeight-clientHeight));
 
   pseudoLine.style.width = pagePercent*document.scrollingElement.scrollWidth
 
-  console.log("top", scrTop, "hiet", scrHeight, "PERCETNAGE", Math.floor(pagePercent))
+  // console.log("top", scrTop, "hiet", scrHeight, "PERCETNAGE", Math.floor(pagePercent))
 
 // console.log("top plus window height",scrTop+window.innerHeight)
   
 
-  console.log("window height", window.innerHeight)
+  // console.log("window height", window.innerHeight)
 
 })
 

@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f0f4f2;
+}
+body nav {
+  position: fixed;
+  height: 4rem;
+  background-color: rgba(240, 244, 242, 0.2);
+  width: 100%;
+  z-index: 5;
+  padding-top: 0.2rem;
+}
+body nav ul {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+body nav ul li {
+  display: inline-block;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 100;
+  color: #815349;
+  padding: 1rem;
+  margin: 0 0.5rem;
+}
+body nav ul li a {
+  text-decoration: none;
+}
+body nav ul li:hover {
+  text-shadow: 5px -1px 3px rgba(131, 84, 73, 0.5);
+}
+body nav .pseudoLine {
+  height: 0.3rem;
+  width: 0px;
+  background-color: #815349;
+  position: absolute;
+  top: 100%;
+}

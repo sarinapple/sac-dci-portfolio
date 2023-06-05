@@ -1,0 +1,67 @@
+// @import "base";
+// You need the base only when you are not using bootstrap. In that case, go to _base.scss
+// to customize it as you may want.
+
+@import "variables";
+// @import "../../node_modules/bootstrap/scss/bootstrap";
+
+// Write your sass code here or import partials
+
+$primary-color: #815349;
+$main-font: "Josefin Sans", sans-serif;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f0f4f2;
+
+  // NAVIGATION SECTION
+  nav {
+    position: fixed;
+    height: 4rem;
+    background-color: rgb(240, 244, 242, 0.2);
+    width: 100%;
+    z-index: 5;
+
+    padding-top: 0.2rem;
+
+    ul {
+      display: flex;
+      justify-content: end;
+      align-items: center;
+      li {
+        display: inline-block;
+        font-family: $main-font;
+
+        font-size: 1.5rem;
+        font-weight: 100;
+
+        color: $primary-color;
+        padding: 1rem;
+        margin: 0 0.5rem;
+
+        a {
+          text-decoration: none;
+        }
+      }
+
+      li:hover {
+        // border: 1.5px solid #815349;
+        text-shadow: 5px -1px 3px rgb(131, 84, 73, 0.5);
+        // background-color: rgb(240, 244, 242, 0.9);
+      }
+    }
+
+    .pseudoLine {
+      height: 0.3rem;
+      width: 0px;
+      background-color: $primary-color;
+      position: absolute;
+      top: 100%;
+    }
+  }
+}
