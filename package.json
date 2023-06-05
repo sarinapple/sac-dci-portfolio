@@ -3,10 +3,10 @@
   "version": "1.0.0",
   "description": "This is a boilerplate",
   "scripts": {
-   
     "build": "rm -rf build && parcel build src/index.html --dist-dir build --public-url ./",
     "publish": "gh-pages -d build",
-    "start": "sass src/styles/main.scss src/styles/compiled/main.css --no-source-map --watch && parcel src/index.html"
+    "sass": "sass --watch src/styles:src/compiled --no-source-map",
+    "start": "sass src/styles/main.scss src/styles/compiled/main.css --watch && parcel src/index.html"
   },
   "author": "dci",
   "license": "ISC",

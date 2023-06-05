@@ -3,7 +3,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles/compiled/main.css" />
+    <link rel="stylesheet" href="compiled/main.css" />
     <title>Sarina DCI Portfolio</title>
     <!-- <link rel="preconnect" href="https://fonts.googleapis.com" /> -->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -22,16 +22,20 @@
   <body>
     <nav>
       <ul>
-        <li>Home</li>
-        <li>Work</li>
-        <li>About</li>
-      </ul>
-      <div class="pseudoLine">
+        <li>
+          <a href="#top">Home</a>
+        </li>
+        <li>
+          <a href="#work-item">Work</a>
+        </li>
+        <li><a href="projects.html">Projects</a></li>
 
-      </div>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="pseudoLine"></div>
     </nav>
 
-    <section class="hero-sect">
+    <section class="hero-sect" id="top">
       <div class="hero-img"></div>
       <div class="blur-bar"></div>
       <!-- <div class="blur-base"></div> -->
@@ -53,137 +57,146 @@
     <section class="mission mission-sect mission-container1">
       <div class="missionP">
         <p>
-          Are you reading this? Might you first want to know who is speaking?
-          I'm Sarina. We aren't sharing an elevator but maybe you will still
-          feel elevated after getting to know me. Born and raised in the foggy
-          but bright city of San Francisco, I always considered myself an "ideas
-          lady." Naturally, it starts with strong interests, but then the
-          imagination takes control. I am still unclear if it is just my mode of
-          operation, but nevertheless having a vision does set the pace for
-          finding a purpose.
+          In case you're reading this, my name is Sarina. I was born and raised
+          in the foggy but bright city of San Francisco. Since childhood I
+          seriously considered myself in particular an "ideas lady." Maybe I'll
+          be an entrepreneur some day. Naturally, it starts with strong
+          interests, but then the imagination takes over. I cannot promise it is
+          becuase it is just not in my nature to sit still, but nevertheless
+          having a vision does set the pace for finding a purpose.
         </p>
         <br />
         <p>
-          I actually left America bound for Berlin to return to school
-          specifically for art direction and copywriting. I was drawn to the ad
-          world for the thrill of realzing ideas and the magic that makes them
-          happen. Bright ideas deserve to recognized and shared.
-
-          <blockquote>...the business enterprise has two--and only two--basic functions:
-            marketing and innovation. - Peter Drucker
-          </blockquote>
-          However, I soon learned that the realization is in the code.
+          Interests may include but are not limited to learning foreign
+          languages, yoga, chess, tango, traveling, coding, boxing, BBQing, and
+          playing the harmonica (future lessons). How is it that I having a
+          vision does set the pace for finding a purpose.
         </p>
+        <br />
       </div>
 
       <img
         class="picofme"
         src="/assets/sarina_affiliate.png"
         alt="img future employee"
-        width="auto" height="600"
+        width="auto"
+        height="600"
       />
     </section>
 
     <section class="mission mission-container2">
       <img
-      class="ar-pic"
-      src="/assets/code_AR_02.png"
-      alt="img future employee"
-      width="auto" height="600"
-    />
-      <p class="missionP">
-        After an illuminating intro to coding as an advertising intern, an
-        opportunity to strengthen that skill led me to the Digital Career Institute,
-        where I completed an intensive JavaScript course. JavaScript makes
-        German look easy, doesn't it? 
-        
-        of which mine include studying languages
-        for fun. I'm not proper nerd, but I did say study and fun in the same
-        sentence.
-      </p>
+        class="brandenburgTur"
+        src="/assets/brandenburgTur01.jpeg"
+        alt="img future employee"
+        width="auto"
+        height="600"
+      />
+
+      <div class="missionP">
+        <p>
+          I actually left America bound for Miami Ad School, Berlin (2019)
+          specifically to train in art direction and copywriting. I was drawn to
+          the ad world for the thrill of realizing ideas and see my imagination
+          in action.
+        </p>
+        <br />
+        <br />
+        <blockquote class="quote">
+          ...the business enterprise has two--and only two--basic functions:
+          marketing and innovation. - Peter Drucker
+        </blockquote>
+        <br />
+        <br />
+        <p>
+          I soon learned that maybe a third function is missing when I
+          understood that the realization is in the code.
+        </p>
+      </div>
     </section>
 
-    <section class="work-sect">
-      
-      <ul class="old-jobs row1">
-        <li>FreshBean</li>
-        <li>MAS Internships
-          <ul>
-            <!-- <li>McCann</li>
+    <section class="work-sect" id="work-item">
+      <div class="overlay">
+        <div class="work-container">
+          <ul class="old-jobs row-work">
+            <li>FreshBean</li>
+            <li>
+              MAS Internships
+              <ul>
+                <!-- <li>McCann</li>
           <li>LOLA</li>
           <li>People Ideas & Culture</li> -->
+              </ul>
+            </li>
+
+            <!-- row2 -->
+
+            <li>St. Elmo's</li>
+            <li>Apple</li>
+            <li>Gap</li>
           </ul>
-        </li>
-      </ul>
 
-      <ul class="old-jobs row2">
-        <li>St. Elmo's</li>
-        <li>Apple</li>
-        <li>Gap</li>
-      </ul>
+          <ul class="apple job-details">
+            <li>Sales & Workshop Host 2010</li>
+            <li>Mobile Technician 2011</li>
+            <li>World Wide Developer Relations (EU Market) 2014-2017</li>
+          </ul>
 
-      <ul class="apple job-details">
-        <li>Sales & Workshop Host 2010</li>
-        <li>Mobile Technician 2011</li>
-        <li>World Wide Developer Relations (EU Market) 2014-2017</li>
-      </ul>
+          <ul class="gap job-details">
+            <li>Troubleshoot in-store POS system remotely</li>
+            <li>Italian transcriptor</li>
+            <li>Internal employee support</li>
+          </ul>
 
-      <ul class="gap job-details">
-        <li>Troubleshoot in-store POS system remotely</li>
-        <li>Italian transcriptor</li>
-        <li>Internal employee support</li>
-      </ul>
+          <ul class="freshbean job-details">
+            <li>Content Writer</li>
+            <li>Art Director assistant</li>
+          </ul>
 
-      <ul class="freshbean job-details">
-        <li>Content Writer</li>
-        <li>Art Director assistant</li>
-      </ul>
+          <ul class="mas job-details">
+            <li>McCann, Madrid 2018</li>
+            <li>LOLA, Madrid 2018</li>
+            <li>People Ideas & Culture, New York 2018</li>
+          </ul>
 
-      <ul class="mas job-details">
-        <li>McCann, Madrid 2018</li>
-        <li>LOLA, Madrid 2018</li>
-        <li>People Ideas & Culture, New York 2018</li>
-      </ul>
-
-      <ul class="stelmos job-details">
-        <li>a</li>
-        <li>b</li>
-        <li>c</li>
-      </ul>
+          <ul class="stelmos job-details">
+            <li>a</li>
+            <li>b</li>
+            <li>c</li>
+          </ul>
+        </div>
+      </div>
     </section>
 
-    <!-- <h1>Hello, World!</h1> -->
+    <section class="mission mission-container2">
+      <div class="missionP">
+        <p>
+          After an illuminating intro to JavaScript as an advertising intern, an
+          opportunity to sharpen that skill led me to the Digital Career
+          Institute. Acquired knowledge is carving a more clear path and the
+          vision in closer reach.
+        </p>
+        <br />
+        <p>
+          The biggest driver is the chance to develop my inherent skills in an
+          environment that points me in the same direction as my future goals. I
+          see myself contributing to the benefit many entrepreneurs that want to
+          reach a purpose they found or defined for themselves, or enterprises
+          with this intention.
+        </p>
+      </div>
+      <img
+        class="ar-pic"
+        src="/assets/code_AR_02.png"
+        alt="img future employee"
+        width="auto"
+        height="600"
+      />
+    </section>
 
     <script src="./portfolio.js"></script>
   </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 <!-- <ul class="old-jobs row1">
   <li>FreshBean</li>
@@ -197,9 +210,6 @@
     </ul>
   </li>
 </ul> -->
-
-
-
 
 <!-- <section class="work-sect">
       
