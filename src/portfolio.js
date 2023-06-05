@@ -1,15 +1,18 @@
-const mas = document.querySelector(".row-work li:nth-of-type(2)")
-console.log('here');
+// const mas = document.querySelector(".row-work li:nth-of-type(2)")
+// console.log('here');
 
-console.log(mas);
+// console.log("mas is heree", mas);
 
 
+const mas = document.querySelector(".row-work li:nth-of-type(2) ul")
+
+console.log(mas)
 
 const curtain = (e) => {
 
   console.log('script here');
 
-  const masUl = document.querySelector(".mas")
+  const masUl = document.querySelector("#mas")
   if (masUl.style.display === "" || masUl.style.display === "block") {
     masUl.style.display = "none"
   } else {

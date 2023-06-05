@@ -169,34 +169,24 @@ body .work-sect .old-jobs {
 }
 body .work-sect .old-jobs .work-button {
   position: relative;
+  border: 0.1rem dashed black;
+}
+body .work-sect .old-jobs .work-button div {
+  position: absolute;
+}
+body .work-sect .old-jobs .work-button ul {
+  position: absolute;
 }
 body .work-sect .old-jobs .apple {
   border: none;
 }
 body .work-sect .old-jobs > li {
-  position: relative;
   border: 0.3rem solid #815349;
   width: 23rem;
+  padding: 2rem;
+  color: #815349;
   margin: 2rem;
   list-style: none;
-  text-align: center;
-  font-size: 2rem;
-  font-weight: 600;
-  color: #815349;
-  height: 6rem;
-}
-body .work-sect .old-jobs > li div {
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-body .work-sect .old-jobs > li ul {
-  opacity: 0;
-}
-body .work-sect .old-jobs > li div,
-body .work-sect .old-jobs > li ul {
-  position: absolute;
-  width: 100%;
   text-align: center;
 }
 body .work-sect .mas {
@@ -207,3 +197,5 @@ body .work-sect .mas {
 body .work-sect .mas li {
   margin: 10px 0 10px;
 }
+
+/*# sourceMappingURL=main.css.map */

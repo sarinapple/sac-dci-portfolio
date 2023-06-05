@@ -7,6 +7,7 @@
 body {
   background-color: #f0f4f2;
 }
+
 body nav {
   position: fixed;
   height: 4rem;
@@ -15,11 +16,13 @@ body nav {
   z-index: 5;
   padding-top: 0.2rem;
 }
+
 body nav ul {
   display: flex;
   justify-content: end;
   align-items: center;
 }
+
 body nav ul li {
   display: inline-block;
   font-family: "Josefin Sans", sans-serif;
@@ -29,12 +32,15 @@ body nav ul li {
   padding: 1rem;
   margin: 0 0.5rem;
 }
+
 body nav ul li a:link {
   text-decoration: none;
 }
+
 body nav ul li:hover {
   text-shadow: 5px -1px 3px rgba(131, 84, 73, 0.5);
 }
+
 body nav .pseudoLine {
   height: 0.3rem;
   width: 0px;
@@ -42,11 +48,13 @@ body nav .pseudoLine {
   position: absolute;
   top: 100%;
 }
+
 body .hero-sect {
   width: 100vw;
   display: flex;
   border: 2px solid cornflowerblue;
 }
+
 body .hero-sect .hero-img {
   background-image: url("../../../assets/zac-sturgeon-sDzof1Ps89s-unsplash.jpg");
   width: 70%;
@@ -58,6 +66,7 @@ body .hero-sect .hero-img {
   border-bottom-right-radius: 15px;
   border-top-right-radius: 15px;
 }
+
 body .hero-sect .blur-bar {
   height: 108vh;
   width: 8rem;
@@ -66,11 +75,13 @@ body .hero-sect .blur-bar {
   left: -3rem;
   filter: blur(20px);
 }
+
 body .hero-sect .blur-base {
   width: 20%;
   height: 20rem;
   border: 2px solid #815349;
 }
+
 body .hero-sect .hero-text {
   font-family: "Josefin Sans", sans-serif;
   justify-content: end;
@@ -82,22 +93,26 @@ body .hero-sect .hero-text {
   line-height: 2.5rem;
   letter-spacing: 0.3rem;
 }
+
 body .hero-sect .hero-text p:first-of-type {
   color: #815349;
   font-size: 2.5rem;
   text-transform: uppercase;
 }
+
 body .hero-sect .hero-text p:nth-of-type(2),
 body .hero-sect .hero-text p:nth-of-type(3) {
   color: #815349;
   font-size: 1.5rem;
 }
+
 body .hero-sect .hero-text .hero-social img {
   width: 1.5rem;
   height: 1.5rem;
   margin-right: 0.3rem;
   margin-top: 0.5rem;
 }
+
 body .mission {
   height: 100vh;
   display: flex;
@@ -105,6 +120,7 @@ body .mission {
   align-items: center;
   border: 5px solid green;
 }
+
 body .mission p {
   width: 830px;
   font-family: "Josefin Sans", sans-serif;
@@ -114,19 +130,23 @@ body .mission p {
   font-style: normal;
   line-height: 2.5rem;
 }
+
 body .mission .quote {
   margin: 15px;
   padding: 2.3rem;
   border: 1px dotted rgba(0, 0, 0, 0.7);
 }
+
 body .mission .picofme {
   width: auto;
   height: 635px;
 }
+
 body .mission .ar-pic {
   width: auto;
   height: 435px;
 }
+
 body .work-sect {
   height: 100vh;
   font-family: "Josefin Sans", sans-serif;
@@ -140,6 +160,7 @@ body .work-sect {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 body .work-sect .overlay {
   display: flex;
   justify-content: space-around;
@@ -149,15 +170,18 @@ body .work-sect .overlay {
   height: 100vh;
   background-color: rgba(240, 244, 242, 0.86);
 }
+
 body .work-sect .job-details {
   display: none;
 }
+
 body .work-sect .job-details li {
   font-size: 2rem;
   font-weight: 400;
   color: #815349;
   margin-left: 2rem;
 }
+
 body .work-sect .old-jobs {
   display: flex;
   justify-content: center;
@@ -167,43 +191,42 @@ body .work-sect .old-jobs {
   border: 0.5rem dashed black;
   position: relative;
 }
+
 body .work-sect .old-jobs .work-button {
   position: relative;
+  border: 0.1rem dashed black;
 }
+
+body .work-sect .old-jobs .work-button div {
+  position: absolute;
+}
+
+body .work-sect .old-jobs .work-button ul {
+  position: absolute;
+}
+
 body .work-sect .old-jobs .apple {
   border: none;
 }
+
 body .work-sect .old-jobs > li {
-  position: relative;
   border: 0.3rem solid #815349;
   width: 23rem;
+  padding: 2rem;
+  color: #815349;
   margin: 2rem;
   list-style: none;
   text-align: center;
-  font-size: 2rem;
-  font-weight: 600;
-  color: #815349;
-  height: 6rem;
 }
-body .work-sect .old-jobs > li div {
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-body .work-sect .old-jobs > li ul {
-  opacity: 0;
-}
-body .work-sect .old-jobs > li div,
-body .work-sect .old-jobs > li ul {
-  position: absolute;
-  width: 100%;
-  text-align: center;
-}
+
 body .work-sect .mas {
   position: relative;
   bottom: 45rem;
   left: 65rem;
 }
+
 body .work-sect .mas li {
   margin: 10px 0 10px;
 }
+
+/*# sourceMappingURL=main.css.map */

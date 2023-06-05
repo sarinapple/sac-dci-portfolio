@@ -192,17 +192,6 @@ body {
 
   // END OF MISSION SECTION
 
-  .job-details {
-    display: none;
-
-    li {
-      font-size: 2rem;
-      font-weight: 400;
-      color: $primary-color;
-      margin-left: 2rem;
-    }
-  }
-
   // WORK SECTION
   .work-sect {
     height: 100vh;
@@ -228,6 +217,17 @@ body {
       background-color: rgb(240, 244, 242, 0.86);
     }
 
+    .job-details {
+      display: none;
+
+      li {
+        font-size: 2rem;
+        font-weight: 400;
+        color: $primary-color;
+        margin-left: 2rem;
+      }
+    }
+
     .old-jobs {
       display: flex;
       justify-content: center;
@@ -237,19 +237,52 @@ body {
       border: 0.5rem dashed black;
       position: relative;
 
+      .work-button {
+        position: relative;
+        // border: 0.3rem solid #815349;
+        // width: 23rem;
+        // padding: 2rem;
+        // color: #815349;
+        // margin: 2rem;
+        // list-style: none;
+        // text-align: center;
+      }
+
       .apple {
         border: none;
       }
     }
 
     .old-jobs > li {
+      position: relative;
       border: 0.3rem solid #815349;
       width: 23rem;
-      padding: 2rem;
-      color: #815349;
+      // padding: 2rem;
       margin: 2rem;
       list-style: none;
       text-align: center;
+      font-size: 2rem;
+      font-weight: 600;
+      color: $primary-color;
+      // margin-left: 2rem;
+      height: 6rem;
+
+      div {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      ul {
+        opacity: 0;
+      }
+
+      div,
+      ul {
+        position: absolute;
+        width: 100%;
+        text-align: center;
+      }
     }
 
     .mas {
