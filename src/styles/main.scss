@@ -73,7 +73,7 @@ body {
     border: 2px solid cornflowerblue;
 
     .hero-img {
-      background-image: url("../../../assets/zac-sturgeon-sDzof1Ps89s-unsplash.jpg");
+      background-image: url("../../assets/zac-sturgeon-sDzof1Ps89s-unsplash.jpg");
       width: 70%;
       height: 100vh;
       background-size: cover;
@@ -164,13 +164,17 @@ body {
     p {
       width: 830px;
       font-family: $main-font;
-      // font-family: ;
+
       color: $primary-color;
       font-size: 1.4rem;
       font-weight: 600;
       font-style: normal;
-      // border: 2px solid #815349;
+
       line-height: 2.5rem;
+    }
+
+    #lady {
+      font-style: italic;
     }
 
     .quote {
@@ -191,6 +195,21 @@ body {
   }
 
   // END OF MISSION SECTION
+
+  .jobBtn.expanded {
+    transform: translate(-50%, -300px) !important;
+  }
+
+  ul.expanded {
+    // transform: translate(-50%, -300px) !important;
+    transform: translateY(-8rem);
+    opacity: 1 !important;
+  }
+
+  ul.expandDown {
+    transform: translateY(8rem);
+    opacity: 1 !important;
+  }
 
   // WORK SECTION
   .work-sect {
@@ -217,11 +236,22 @@ body {
       background-color: rgb(240, 244, 242, 0.86);
     }
 
+    // WHY DO WE NEED THIS?
+
+    .jobBtn {
+      border: 0.3rem solid #815349;
+      width: 100%;
+      height: 100%;
+      display: grid;
+      place-items: center;
+      transition: 1s;
+    }
+
     .job-details {
-      display: none;
+      transition: 1s;
 
       li {
-        font-size: 2rem;
+        font-size: 1.8rem;
         font-weight: 400;
         color: $primary-color;
         margin-left: 2rem;
@@ -234,28 +264,13 @@ body {
       align-items: center;
       flex-wrap: wrap;
       width: 1600px;
-      border: 0.5rem dashed black;
+      // border: 0.5rem dashed black;
       position: relative;
-
-      .work-button {
-        position: relative;
-        // border: 0.3rem solid #815349;
-        // width: 23rem;
-        // padding: 2rem;
-        // color: #815349;
-        // margin: 2rem;
-        // list-style: none;
-        // text-align: center;
-      }
-
-      .apple {
-        border: none;
-      }
     }
 
     .old-jobs > li {
       position: relative;
-      border: 0.3rem solid #815349;
+      // border: 0.3rem solid #815349;
       width: 23rem;
       // padding: 2rem;
       margin: 2rem;
