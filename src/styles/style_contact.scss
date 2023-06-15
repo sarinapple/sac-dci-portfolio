@@ -1,0 +1,71 @@
+$primary-color: #815349;
+$main-font: "Josefin Sans", sans-serif;
+
+body {
+  background-color: #f0f4f2;
+  font-family: $main-font;
+
+  .container {
+    font-family: "Josefin Sans";
+    width: 100vh;
+    height: 100vh;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("/assets/coit-tower.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .overlay {
+      //   display: flex;
+      //   justify-content: space-around;
+      //   align-items: center;
+      //   position: absolute;
+      width: 100%;
+      height: 100%;
+      background-color: rgb(240, 244, 242, 0.8);
+
+      form {
+        display: flex;
+        // justify-content: center;
+        // align-items: center;
+        flex-direction: column;
+        // max-width: 30rem;
+
+        // height: 45rem;
+
+        form > input,
+        form > textarea {
+          height: 2rem;
+          width: 25rem;
+        }
+
+        #message {
+          height: 4rem;
+        }
+
+        #submitButn {
+          width: 200px;
+        }
+
+        #home {
+          width: 100px;
+          padding: 0.1rem;
+          margin: 1rem;
+          border: #815349 2px solid;
+          border-radius: 0px;
+        }
+      }
+    }
+  }
+}
+// height: 100vh;
+// font-family: $main-font;
+// font-size: 2.5rem;
+// display: flex;
+// flex-wrap: wrap;
+// // flex-direction: column;
+// font-weight: bold;
+// justify-content: center;
+// align-items: center;
