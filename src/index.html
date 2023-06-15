@@ -3,7 +3,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="compiled/main.css" />
+    <link rel="stylesheet" href="styles/main.scss" />
     <title>Sarina DCI Portfolio</title>
     <!-- <link rel="preconnect" href="https://fonts.googleapis.com" /> -->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -53,25 +53,25 @@
       </div>
     </section>
 
-    <h3>the mission</h3>
     <section class="mission mission-sect mission-container1">
       <div class="missionP">
+        <h3>the mission</h3>
         <p>
           In case you're reading this, my name is Sarina. I was born and raised
           in the foggy but bright city of San Francisco. Since childhood I
           seriously considered myself in particular an "ideas lady." Maybe I'll
           be an entrepreneur some day. Naturally, it starts with strong
-          interests, but then the imagination takes over. I cannot promise it is
-          becuase it is just not in my nature to sit still, but nevertheless
-          having a vision does set the pace for finding a purpose.
+          interests, but then the imagination takes over. As an
+          <span id="lady">ideas lady </span> that might just be my nature, but
+          nevertheless having a vision does set the pace for finding a purpose.
         </p>
         <br />
-        <p>
+        <!-- <p>
           Interests may include but are not limited to learning foreign
           languages, yoga, chess, tango, traveling, coding, boxing, BBQing, and
           playing the harmonica (future lessons). How is it that I having a
           vision does set the pace for finding a purpose.
-        </p>
+        </p> -->
         <br />
       </div>
 
@@ -109,62 +109,89 @@
         <br />
         <br />
         <p>
-          I soon learned that maybe a third function is missing when I
-          understood that the realization is in the code.
+          Perhaps a third function is missing when I understood that the
+          realization is in the code.
         </p>
       </div>
     </section>
 
     <section class="work-sect" id="work-item">
       <div class="overlay">
-        <div class="work-container">
-          <ul class="old-jobs row-work">
-            <li>FreshBean</li>
-            <li>
-              MAS Internships
-              <ul>
-                <!-- <li>McCann</li>
-          <li>LOLA</li>
-          <li>People Ideas & Culture</li> -->
-              </ul>
-            </li>
+        <ul class="old-jobs">
+          <li>
+            <div class="jobBtn">FreshBean</div>
+            <ul class="job-details">
+              <li>Start-Up</li>
+              <li>Content Creation Leader</li>
+              <li>Customer Service Development</li>
+            </ul>
+          </li>
 
-            <!-- row2 -->
+          <li>
+            <div class="jobBtn">MAS Internships</div>
+            <ul class="job-details">
+              <li>McCann, Madrid 2018</li>
+              <li>LOLA, Madrid 2018</li>
+              <li>People Ideas & Culture, New York 2018</li>
+            </ul>
+          </li>
 
-            <li>St. Elmo's</li>
-            <li>Apple</li>
-            <li>Gap</li>
-          </ul>
+          <li>
+            <div class="jobBtn">St. Elmo's</div>
+            <ul class="job-details">
+              <li>Social Media Marketing</li>
+              <li>Production/ Content Creation</li>
+              <li>Conceptualizing</li>
+            </ul>
+          </li>
 
-          <ul class="apple job-details">
-            <li>Sales & Workshop Host 2010</li>
-            <li>Mobile Technician 2011</li>
-            <li>World Wide Developer Relations (EU Market) 2014-2017</li>
-          </ul>
+          <li>
+            <div class="jobBtn">Apple</div>
+            <ul class="job-details">
+              <li>McCann, Madrid 2018</li>
+              <li>LOLA, Madrid 2018</li>
+              <li>People Ideas & Culture, New York 2018</li>
+            </ul>
+          </li>
 
-          <ul class="gap job-details">
-            <li>Troubleshoot in-store POS system remotely</li>
-            <li>Italian transcriptor</li>
-            <li>Internal employee support</li>
-          </ul>
+          <li>
+            <div class="jobBtn">Gap</div>
+            <ul class="job-details">
+              <li>Technical Analyst</li>
+              <li>Internal Interpreter</li>
+              <li>Markets: Italy, Spain, UK</li>
+            </ul>
+          </li>
+        </ul>
 
-          <ul class="freshbean job-details">
-            <li>Content Writer</li>
-            <li>Art Director assistant</li>
-          </ul>
+        <!-- <ul class="apple job-details">
+          <li>Sales & Workshop Host 2010</li>
+          <li>Mobile Technician 2011</li>
+          <li>World Wide Developer Relations (EU Market) 2014-2017</li>
+        </ul>
 
-          <ul class="mas job-details">
+        <ul class="gap job-details">
+          <li>Troubleshoot in-store POS system remotely</li>
+          <li>Italian transcriptor</li>
+          <li>Internal employee support</li>
+        </ul>
+
+        <ul class="freshbean job-details">
+          <li>Content Writer</li>
+          <li>Art Director assistant</li>
+        </ul> -->
+
+        <!-- <ul id="mas" class="job-details">
             <li>McCann, Madrid 2018</li>
             <li>LOLA, Madrid 2018</li>
             <li>People Ideas & Culture, New York 2018</li>
-          </ul>
+          </ul> -->
 
-          <ul class="stelmos job-details">
-            <li>a</li>
-            <li>b</li>
-            <li>c</li>
-          </ul>
-        </div>
+        <!-- <ul class="stelmos job-details">
+          <li>a</li>
+          <li>b</li>
+          <li>c</li>
+        </ul> -->
       </div>
     </section>
 
@@ -173,8 +200,8 @@
         <p>
           After an illuminating intro to JavaScript as an advertising intern, an
           opportunity to sharpen that skill led me to the Digital Career
-          Institute. Acquired knowledge is carving a more clear path and the
-          vision in closer reach.
+          Institute. This knowledge opens a wider path and making the vision in
+          closer reach.
         </p>
         <br />
         <p>
@@ -197,63 +224,3 @@
     <script src="./portfolio.js"></script>
   </body>
 </html>
-
-<!-- <ul class="old-jobs row1">
-  <li>FreshBean</li>
-  <li>MAS Internships
-    <ul>
-      //
-        <li>McCann</li>
-    <li>LOLA</li>
-    <li>People Ideas & Culture</li> 
-  //
-    </ul>
-  </li>
-</ul> -->
-
-<!-- <section class="work-sect">
-      
-  <ul class="old-jobs row1">
-    <li>FreshBean</li>
-    <li>MAS Internships
-      <ul>
-     
-      </ul>
-    </li>
-  </ul>
-
-  <ul class="old-jobs row2">
-    <li>St. Elmo's</li>
-    <li>Apple</li>
-    <li>Gap</li>
-  </ul>
-
-  <ul class="apple job-details">
-    <li>Sales & Workshop Host 2010</li>
-    <li>Mobile Technician 2011</li>
-    <li>World Wide Developer Relations (EU Market) 2014-2017</li>
-  </ul>
-
-  <ul class="gap job-details">
-    <li>Troubleshoot in-store POS system remotely</li>
-    <li>Italian transcriptor</li>
-    <li>Internal employee support</li>
-  </ul>
-
-  <ul class="freshbean job-details">
-    <li>Content Writer</li>
-    <li>Art Director assistant</li>
-  </ul>
-
-  <ul class="mas job-details">
-    <li>McCann, Madrid 2018</li>
-    <li>LOLA, Madrid 2018</li>
-    <li>People Ideas & Culture, New York 2018</li>
-  </ul>
-
-  <ul class="stelmos job-details">
-    <li>a</li>
-    <li>b</li>
-    <li>c</li>
-  </ul>
-</section> -->
